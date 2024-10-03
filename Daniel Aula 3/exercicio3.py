@@ -8,7 +8,7 @@
 
 print("Qual tamanho do sapato e fucinheira comprar para seu cachorro!?")
 #pedindo informação do tamanho da coleira do cachorro
-coleira_tam = float(input("Qual tamanho da coleira do seu cachorro? em centimetros. :"))
+coleira_tam = int(input("Qual tamanho da coleira do seu cachorro? "))
 
 #fazendo calculos dos tamanhos do sapato e fucinheira do cachorro
 sapato_tam = coleira_tam*2
@@ -16,5 +16,5 @@ fucinheira_tam = coleira_tam*3
 
 #retornando informacao dos tamanhos calculados
 print("Seguem aqui as informação para suas compras!!")
-print(f"O Tamanho dos sapataos para seu Cão é :{sapato_tam:.2f}cm.")
-print(f"O tamanho da fucinheiro do seu cão é: {fucinheira_tam:.2f}cm.")
+print(f"O Tamanho dos sapataos para seu Cão é :{sapato_tam}.")
+print(f"O tamanho da fucinheiro do seu cão é: {fucinheira_tam}.")
