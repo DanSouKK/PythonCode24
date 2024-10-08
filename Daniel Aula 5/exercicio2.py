@@ -22,3 +22,5 @@ elif extra=="não" or "nao":
         print(f"\nO seu servico ficara em ${valortotal}.")
 else:
     print(f"\nO seu serviço ficara em ${valortotal}.")
+print("------------Obrigado por escolher nossos serviços, volte sempre!------------\n")
+print("\nfim.")
