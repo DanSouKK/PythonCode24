@@ -15,9 +15,9 @@ altura_quadrado = altura*altura
 IMC=peso/altura_quadrado
 #retornos dos resultados
 if(IMC<16):
-    print(f"Seu IMC é {IMC:.2f} oque indica que você esta muito abaixo do peso normal. Grau de magreza III.")
+    print(f"Seu IMC é {IMC:.2f} oque indica que você esta muito abaixo do peso normal. Grau de Magreza III.")
 elif(IMC>=16 and IMC<=16.99):
-    print(f"Seu IMC é {IMC:.2f} oque indica que você esta abaixo do peso normal. Grau de magreza II.")
+    print(f"Seu IMC é {IMC:.2f} oque indica que você esta abaixo do peso normal. Grau de Magreza II.")
 elif(IMC>=17 and IMC<=18.49):
     print(f"Seu IMC é {IMC:.2f} oque indica que você esta abaixo do peso normal. Grau de Magreza I.")
 elif(IMC>=18.5 and IMC<=24.99):
