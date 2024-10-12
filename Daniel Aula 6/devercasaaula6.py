@@ -51,7 +51,7 @@ while continuar.lower() in [ "sim" or "s"]:
     # Pergunta se o usuário deseja continuar
     continuar = input("Você deseja continuar reciclando? (sim/nao): ")
     # validacao de string correta para continuar ou nao o codigo.
-    while continuar not in ["sim", "nao"]:
+    while continuar not in ["sim","nao"]:
       print("\nERRO: Resposta inválida. Por favor, responda com 'sim' ou 'nao'.")
       continuar = input("\nVocê deseja continuar reciclando? (sim/nao): ").lower()
 
