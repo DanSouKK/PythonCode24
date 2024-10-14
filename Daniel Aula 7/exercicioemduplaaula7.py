@@ -13,7 +13,7 @@ organico = 0
 nao_organico = 0
 
 # Define que o usuário deseja continuar reciclando ao iniciar o loop
-continuar = "sim"  # Aqui o operador "or" não é necessário. Pode ser só "sim" para inicialização correta.
+continuar = "sim"  
 
 # Variáveis para armazenar o último e o penúltimo material reciclado, para evitar repetições
 ultimo_material = ""
