@@ -12,10 +12,14 @@ while tentativas > 0:
         print("\nSeu palpite é muito baixo!")
     elif palpite < numero_secreto-5:
         print("\nVocê está proximo!")
+    elif palpite < numero_secreto-20:
+        print("\nSeu palpite está muito longe!")
     elif palpite > numero_secreto+10:
         print("\nSeu palpite é muito alto!")
     elif palpite > numero_secreto+5:
         print("\nVocê está proximo!")
+    elif palpite < numero_secreto+20:
+        print("\nSeu palpite está muito longe!")
     else:
         print("Parabéns! Você adivinhou o número!")
         break  # Sai do loop se o usuário adivinhou corretamente
