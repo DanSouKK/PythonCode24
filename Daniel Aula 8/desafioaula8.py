@@ -1,0 +1,1 @@
+#faça um programa que mostre os 10 primeiros numeros da sequencia fibonacci
