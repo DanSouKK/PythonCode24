@@ -4,5 +4,5 @@ for i in range(6):
     print("è big, é big")
 for i in range(4):
     print("é hora, é hora")
-for i in range(1):
+#for i in range(1): redundante este for
     print("Parabéns!")
