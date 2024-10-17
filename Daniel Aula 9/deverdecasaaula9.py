@@ -1,0 +1,1 @@
+#adicione ao jogo da adivinhação a opção de colocar mais 1 ou 2 numeros para serem adivinhados simultaneamente.
