@@ -78,6 +78,7 @@ while tentativas > 0:
     # Se ambos os números forem adivinhados, o jogo termina
     if acertou1 and acertou2:
         print("\nVocê adivinhou todos os números!")
+        print(f"Os numeros eram: \nPrimeiro: {numero_secreto1}\nSegundo: {numero_secreto2}")
         break
 
     tentativas -= 1
