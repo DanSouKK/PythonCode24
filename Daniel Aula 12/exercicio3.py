@@ -60,16 +60,16 @@ while atk_player < 30:
 
       
 
-print("Apos terminar seu treinamento, você vagueia pela floresta...")
+print("\nApos terminar seu treinamento, você vagueia pela floresta...")
 time.sleep(1)
-print("Depois de algum tempo você encontra um bandido, que lhe surpreende...")
+print("           Depois de algum tempo você encontra um bandido, que lhe surpreende...")
 time.sleep(1)
-print("Ele lhe exige que entregue seus pertences...")
+print("                     Ele lhe exige que entregue seus pertences...")
 time.sleep(1)
 
-acao = int(input("Qual ação ira escolher?\n1 - Lutar...\n2 - Entregar os pertences...\n3 - Fugir..."))
+acao = int(input("\nQual ação ira escolher?\n1 - Lutar...\n2 - Entregar os pertences...\n3 - Fugir..."))
 if acao == 1:
-    print("A batalha começa entre o Aventureiro e o Bandido!")
+    print("\nA batalha começa entre o Aventureiro e o Bandido!")
     time.sleep(2)
     print("\nStatus Enemy\n// HP atual: ", hp_enemy, "\n // Ataque: ", atk_enemy)
     # Loop da batalha
