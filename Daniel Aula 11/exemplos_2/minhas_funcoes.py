@@ -13,5 +13,8 @@ def multiplicar(a, b):
     return a * b
 
 def divisao(a, b):
-    return a / b
+    if b!=0:
+        return a / b        
+    else:
+        return "Erro: não é possivel divisao por zero!"
 

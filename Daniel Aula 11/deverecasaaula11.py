@@ -38,7 +38,7 @@ while True:
         elif operacao == 4:
             print("Operação de Divisão.")
             if num2 == 0:
-                print("Erro: Divisão por zero não é permitida.")
+                print("\n !!! Erro: Divisão por zero não é permitida.")
             else:
                 resultado = divisao(num1, num2)
                 print(f"\nA divisão de {num1} por {num2} = {resultado}.")
