@@ -203,7 +203,7 @@ def criar_personagem_aleatorio():
       Pontos de Vida: {pontos_de_vida}
       Ataque: {ataque}
       Defesa: {defesa}
-      Magia: {magia}
+      Ataque Magia: {magia}
       Defesa Mágica: {defesa_magica}
       Taxa de Acerto: {taxa_acerto}
       Crítico: {crit_rate}
