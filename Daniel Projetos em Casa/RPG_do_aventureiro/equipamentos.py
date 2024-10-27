@@ -1,58 +1,64 @@
 # Lista de armas
 armas = ["espada curta", "arco longo", "katana", "arco curto", "espada longa", 
-         "machado grande", "machado duplo", "cajado", "grimorio", "adaga", "besta leve", "besta pesada", "cimitarra"
-         "maça", "mangual", "lança curta", "lança longa", "martelo combate", "espada larga"]
+         "machado grande", "machado duplo", "cajado", "grimorio", "adaga", "besta leve", "besta pesada", "cimitarra",
+         "maça","maça pesada","maça estrela", "mangual", "lança curta", "lança longa", "martelo combate","martelo de guerra", "espada larga"]
 
 armaduras = ["Armadura acolchoada", "Corselete de couro", "Couro batido", "Camisa de cota de Malha", "Gibão de peles",
-            "Brunea", "Cota de malha", "Couraça", "Armadura de Gladiador", "Couraça de Bronze", "Cota de talas",
+            "Brunea", "Cota de malha", "Peitoral de aço", "Armadura de Gladiador", "peitoral de Bronze", "Cota de talas",
             "Loriga segmentada", "Meia-armadura","Armadura completa"]
 escudos = ["Escudo leve", "Escudo pesado", "Escudo de corpo"]
 
-
 # Dicionário para armazenar os valores de ataque e chance de crítico
 valores_armas = {
-    "espada curta": {"atk": 10, "crit_chance": 0.15, "maos": 1},       # 15% de chance de crítico / arma de 1 maos
-    "espada longa": {"atk": 12, "crit_chance": 0.1, "maos": 1}, # 10% de chance de crítico / arma de 1 maos
-    "espada larga": {"atk": 15, "crit_chance": 0.1, "maos": 2},     # 10% de chance de crítico/ arma de 2 maos
-    "arco longo": {"atk": 18, "crit_chance": 0.15, "maos": 2},   # 15% de chance de crítico    / arma de 2 maos
-    "arco curto": {"atk": 14, "crit_chance": 0.1, "maos": 2},     # 10% de chance de crítico / arma de 2 maos
-    "katana": {"atk": 12, "crit_chance": 0.2, "maos": 2},       # 20% de chance de crítico  / arma de 2 maos
-    "machado grande": {"atk": 15, "crit_chance": 0.25, "maos": 2}, # 25% de chance de crítico / arma de 2 maos
-    "machado duplo": {"atk": 14, "crit_chance": 0.2, "maos": 2},  # 20% de chance de crítico / arma de 2 maos
-    "martelo combate": {"atk": 16, "crit_chance": 0.2, "maos": 1}, # 20% de chance de crítico / arma de 1 maos
-    "cajado": {"atk": 6, "crit_chance": 0.05, "maos": 2},         # 5% de chance de crítico / arma de 2 maos
-    "grimorio": {"atk": 9, "crit_chance": 0.1, "maos": 1},        # 10% de chance de crítico / arma de 1 maos
-    "adaga": {"atk": 5, "crit_chance": 0.3, "maos": 1},           # 30% de chance de crítico / arma de 1 maos
-    "maça": {"atk": 10, "crit_chance": 0.1, "maos": 1},           # 10% de chance de crítico / arma de 1 maos
-    "mangual": {"atk": 13, "crit_chance": 0.15, "maos": 1},       # 15% de chance de crítico / arma de 1 maos
-    "lança curta": {"atk": 7, "crit_chance": 0.1, "maos": 1},     # 10% de chance de crítico / arma de 1 maos
-    "lança longa": {"atk": 9, "crit_chance": 0.05, "maos": 2},    # 5% de chance de crítico  / arma de 2 maos
-    "besta leve": {"atk": 10, "crit_chance": 0.1, "maos": 2},    # 10% de chance de crítico  / arma de 2 maos
-    "besta pesada": {"atk": 14, "crit_chance": 0., "maos": 2}    # 10% de chance de crítico  / arma de 2 maos
-    
+    "espada curta": {"atk": 10, "crit_chance": 0.15, "maos": 1},
+    "espada longa": {"atk": 12, "crit_chance": 0.1, "maos": 1},
+    "espada larga": {"atk": 15, "crit_chance": 0.1, "maos": 2},
+    "arco longo": {"atk": 18, "crit_chance": 0.15, "maos": 2},
+    "arco curto": {"atk": 14, "crit_chance": 0.1, "maos": 2},
+    "katana": {"atk": 12, "crit_chance": 0.2, "maos": 2},
+    "machado grande": {"atk": 15, "crit_chance": 0.25, "maos": 2},
+    "machado duplo": {"atk": 14, "crit_chance": 0.2, "maos": 2},
+    "martelo combate": {"atk": 16, "crit_chance": 0.2, "maos": 1},
+    "cajado": {"atk": 6, "crit_chance": 0.05, "maos": 2},
+    "grimorio": {"atk": 9, "crit_chance": 0.1, "maos": 1},
+    "adaga": {"atk": 5, "crit_chance": 0.3, "maos": 1},
+    "maça": {"atk": 10, "crit_chance": 0.1, "maos": 1},
+    "maça pesada": {"atk": 14, "crit_chance": 0.15, "maos": 2},
+    "maça estrela": {"atk": 13, "crit_chance": 0.15, "maos": 1},
+    "mangual": {"atk": 13, "crit_chance": 0.15, "maos": 1},
+    "lança curta": {"atk": 7, "crit_chance": 0.1, "maos": 1},
+    "lança longa": {"atk": 9, "crit_chance": 0.05, "maos": 2},
+    "besta leve": {"atk": 10, "crit_chance": 0.1, "maos": 2},
+    "besta pesada": {"atk": 14, "crit_chance": 0.1, "maos": 2},
+    "cimitarra": {"atk": 11, "crit_chance": 0.2, "maos": 1},
+    "martelo de guerra": {"atk": 17, "crit_chance": 0.15, "maos": 2}
 }
+
+
 # Dicionario para as armaduras e os valores de defesa de cada uma.
 valores_armaduras = {
-    "Armadura acolchoada": 1,
-    "Corselete de couro": 2,
-    "Couro batido": 3,
-    "Camisa de cota de Malha": 4,
-    "Gibão de peles": 3,
-    "Brunea": 4,
-    "Cota de malha": 5,
-    "Couraça": 5,
-    "Armadura de Gladiador": 5,
-    "Couraça de Bronze": 4,
-    "Cota de talas": 6,
-    "Loriga segmentada": 6,
-    "Meia-armadura": 7,
-    "Armadura completa": 10
+    "Armadura acolchoada": {"defesa": 1, "tipo": "leve"},
+    "Corselete de couro": {"defesa": 2, "tipo": "leve"},
+    "Couro batido": {"defesa": 3, "tipo": "leve"},
+    "Camisa de cota de Malha": {"defesa": 4, "tipo": "leve"},
+    "Gibão de peles": {"defesa": 3, "tipo": "media"},
+    "Brunea": {"defesa": 4, "tipo": "media"},
+    "Cota de malha": {"defesa": 5, "tipo": "media"},
+    "Peitoral de aço": {"defesa": 5, "tipo": "media"},
+    "Armadura de Gladiador": {"defesa": 5, "tipo": "pesada"},
+    "peitoral de Bronze": {"defesa": 4, "tipo": "media"},
+    "Cota de talas": {"defesa": 6, "tipo": "pesada"},
+    "Loriga segmentada": {"defesa": 6, "tipo": "pesada"},
+    "Meia-armadura": {"defesa": 7, "tipo": "pesada"},
+    "Armadura completa": {"defesa": 10, "tipo": "pesada"}
 }
+
 valores_escudos = {
-    "Escudo leve": 1,
-    "Escudo pesado": 2,
-    "Escudo de corpo": 4,
+    "Escudo leve": {"defesa": 1, "tipo": "escudos"},
+    "Escudo pesado": {"defesa": 2, "tipo": "escudos"},
+    "Escudo de corpo": {"defesa": 4, "tipo": "escudos"}
 }
+
 
 # Função para exibir os valores de defesa das armaduras
 def exibir_armaduras_defesas(armaduras, valores_armaduras):
@@ -77,62 +83,63 @@ exibir_escudos_defesas(escudos, valores_escudos)
 print("-" * 40)# print para separar linhas
 
 # Criação de um personagem
-personagem_criado = {
-    "nome": "personagem_criado Valente",
+equipamentos = {    
     "armadura": None,
     "escudo": None,
     "arma": None,
     "defesa": 0,
     "ataque": 0,
-    "crit_chance": 0,
+    "crit_chance": 0
 }
 
-# Função para equipar armadura e arma ao personagem_criado
-def equipar_personagem_criado(personagem_criado, armadura, arma):
+# Função para equipar armadura e arma ao equipamentos
+# Função para equipar armadura e arma ao equipamentos
+def equipar_equipamentos(equipamentos, armadura, arma):
     # Equipar armadura
     if armadura in armaduras:
-        personagem_criado["armadura"] = armadura
-        personagem_criado["defesa"] = valores_armaduras[armadura]
+        equipamentos["armadura"] = armadura
+        equipamentos["defesa"] = valores_armaduras[armadura]["defesa"]
     
     # Equipar arma
     if arma in valores_armas:
-        personagem_criado["arma"] = arma
-        personagem_criado["ataque"] = valores_armas[arma]["atk"]
-        personagem_criado["crit_chance"] = valores_armas[arma]["crit_chance"]
+        equipamentos["arma"] = arma
+        equipamentos["ataque"] = valores_armas[arma]["atk"]
+        equipamentos["crit_chance"] = valores_armas[arma]["crit_chance"]
 
         # Verificar se a arma é de 1 ou 2 mãos
         if valores_armas[arma]["maos"] == 1:
             escudo_escolhido = equipar_escudo()  # Pergunta se deseja equipar um escudo
             if escudo_escolhido:
-                personagem_criado["escudo"] = escudo_escolhido
-                personagem_criado["defesa"] += valores_escudos[escudo_escolhido]
+                equipamentos["escudo"] = escudo_escolhido
+                # Adiciona a defesa do escudo ao valor de defesa total
+                equipamentos["defesa"] += valores_escudos[escudo_escolhido]["defesa"]
         else:
-            personagem_criado["escudo"] = None  # Sem escudo para armas de 2 mãos
+            equipamentos["escudo"] = None  # Sem escudo para armas de 2 mãos
             print(f"\n{arma.capitalize()} é uma arma de duas mãos. Não é possível usar escudo.")
 
-# Função para exibir os status do personagem_criado
-def exibir_status_personagem_criado(personagem_criado):
-    crit_chance_percent = personagem_criado["crit_chance"] * 100
-    print("\nPersonagem Criado: ")
-    print(f"\nNome: {personagem_criado['nome']}")
-    
-    # Exibir armadura com a defesa
-    if personagem_criado['armadura']:
-        armadura_defesa = valores_armaduras[personagem_criado['armadura']]
-        print(f"Armadura: {personagem_criado['armadura']} (Defesa: {armadura_defesa})")
+
+# Função para exibir os status do equipamentos
+# Função para exibir os status do equipamentos
+# Função para exibir os status do equipamentos
+def exibir_status_equipamentos(equipamentos):
+    crit_chance_percent = equipamentos["crit_chance"] * 100
+    print("\nEquipamentos:")
+    if equipamentos['armadura']:
+        print(f"Armadura: {equipamentos['armadura']} (Defesa: {equipamentos['defesa']})")
     else:
         print("Armadura: Nenhuma")
-    
-    # Exibir escudo com a defesa, se houver
-    if personagem_criado.get("escudo"):
-        escudo_defesa = valores_escudos[personagem_criado['escudo']]
-        print(f"Escudo: {personagem_criado['escudo']} (Defesa: {escudo_defesa})")
-    
-    # Exibir arma com ataque e chance de crítico
-    if personagem_criado['arma']:
-        print(f"Arma: {personagem_criado['arma']} (Ataque: {personagem_criado['ataque']}, Crítico: {crit_chance_percent:.1f}%)")
+
+    if equipamentos.get("escudo"):
+        defesa_escudo = valores_escudos[equipamentos['escudo']]["defesa"]
+        print(f"Escudo: {equipamentos['escudo']} (Defesa adicional: {defesa_escudo})")
     else:
-        print("Arma: Nenhuma (Ataque: 0, Crítico: 0.0%)")
+        print("Escudo: Nenhum")
+    
+    arma_nome = equipamentos['arma'].capitalize() if equipamentos['arma'] else "Nenhuma"
+    print(f"Arma: {arma_nome} (Ataque: {equipamentos['ataque']}, Chance de Crítico: {crit_chance_percent:.0f}%)")
+
+
+
 
 # Função para escolher armadura
 def escolher_armadura():
@@ -187,7 +194,7 @@ armadura_escolhida = escolher_armadura()  # Chamar a função para escolher arma
 arma_escolhida = escolher_arma()  # Chamar a função para escolher arma
 
 # Equipar personagem
-equipar_personagem_criado(personagem_criado, armadura_escolhida, arma_escolhida)
+equipar_equipamentos(equipamentos, armadura_escolhida, arma_escolhida)
 
 # Exibir status do personagem
-exibir_status_personagem_criado(personagem_criado)
+exibir_status_equipamentos(equipamentos)
