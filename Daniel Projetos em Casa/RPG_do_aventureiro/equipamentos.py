@@ -1,6 +1,6 @@
 # Lista de armas
 armas = ["espada curta", "arco longo", "katana", "arco curto", "espada longa", 
-         "machado grande", "machado duplo", "cajado", "grimorio", "adaga", 
+         "machado grande", "machado duplo", "cajado", "grimorio", "adaga", "besta leve", "besta pesada", "cimitarra"
          "maça", "mangual", "lança curta", "lança longa", "martelo combate", "espada larga"]
 
 armaduras = ["Armadura acolchoada", "Corselete de couro", "Couro batido", "Camisa de cota de Malha", "Gibão de peles",
@@ -14,8 +14,8 @@ valores_armas = {
     "espada curta": {"atk": 10, "crit_chance": 0.15, "maos": 1},       # 15% de chance de crítico / arma de 1 maos
     "espada longa": {"atk": 12, "crit_chance": 0.1, "maos": 1}, # 10% de chance de crítico / arma de 1 maos
     "espada larga": {"atk": 15, "crit_chance": 0.1, "maos": 2},     # 10% de chance de crítico/ arma de 2 maos
-    "arco longo": {"atk": 8, "crit_chance": 0.15, "maos": 2},   # 15% de chance de crítico    / arma de 2 maos
-    "arco curto": {"atk": 7, "crit_chance": 0.1, "maos": 2},     # 10% de chance de crítico / arma de 2 maos
+    "arco longo": {"atk": 18, "crit_chance": 0.15, "maos": 2},   # 15% de chance de crítico    / arma de 2 maos
+    "arco curto": {"atk": 14, "crit_chance": 0.1, "maos": 2},     # 10% de chance de crítico / arma de 2 maos
     "katana": {"atk": 12, "crit_chance": 0.2, "maos": 2},       # 20% de chance de crítico  / arma de 2 maos
     "machado grande": {"atk": 15, "crit_chance": 0.25, "maos": 2}, # 25% de chance de crítico / arma de 2 maos
     "machado duplo": {"atk": 14, "crit_chance": 0.2, "maos": 2},  # 20% de chance de crítico / arma de 2 maos
@@ -26,7 +26,9 @@ valores_armas = {
     "maça": {"atk": 10, "crit_chance": 0.1, "maos": 1},           # 10% de chance de crítico / arma de 1 maos
     "mangual": {"atk": 13, "crit_chance": 0.15, "maos": 1},       # 15% de chance de crítico / arma de 1 maos
     "lança curta": {"atk": 7, "crit_chance": 0.1, "maos": 1},     # 10% de chance de crítico / arma de 1 maos
-    "lança longa": {"atk": 9, "crit_chance": 0.05, "maos": 2}    # 5% de chance de crítico  / arma de 2 maos
+    "lança longa": {"atk": 9, "crit_chance": 0.05, "maos": 2},    # 5% de chance de crítico  / arma de 2 maos
+    "besta leve": {"atk": 10, "crit_chance": 0.1, "maos": 2},    # 10% de chance de crítico  / arma de 2 maos
+    "besta pesada": {"atk": 14, "crit_chance": 0., "maos": 2}    # 10% de chance de crítico  / arma de 2 maos
     
 }
 # Dicionario para as armaduras e os valores de defesa de cada uma.
