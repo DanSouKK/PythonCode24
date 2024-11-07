@@ -1,0 +1,14 @@
+def calcular_valorizacao(valor_atual, valor_projetado):
+    # Calcula a porcentagem de valorização
+    porcentagem_valorizacao = ((valor_projetado - valor_atual) / valor_atual) * 100
+    return porcentagem_valorizacao
+
+# Solicita os valores do usuário
+valor_atual = float(input("Digite o valor atual do ativo: "))
+valor_projetado = float(input("Digite o valor projetado do ativo: "))
+
+# Calcula a valorização
+porcentagem = calcular_valorizacao(valor_atual, valor_projetado)
+
+# Exibe o resultado
+print(f"O ativo terá uma valorização de aproximadamente {porcentagem:.2f}%")
