@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Daniel Souza - Portfólio</title>
+    <style>
+        /* Estilo base do corpo da página
+           - Utiliza gradiente de fundo em tons de azul escuro
+           - Centraliza todo o conteúdo vertical e horizontalmente */
+        body {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        /* Container principal do portfólio
+           - Fundo semi-transparente
+           - Cantos arredondados
+           - Sombra para efeito de profundidade */
+        .portfolio-container {
+            background: rgba(30, 40, 60, 0.8);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+
+        /* Animação de barra de carregamento
+           - Inicialmente com largura zero
+           - Animação gradual para 100% da largura
+           - Gradiente de cor roxa para laranja */
+        .loading-bar {
+            width: 0;
+            height: 4px;
+            background: linear-gradient(to right, #8a2be2, #ff4500);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: loading 3s linear forwards;
+        }
+
+        /* Keyframe para animação de carregamento */
+        @keyframes loading {
+            to { width: 100%; }
+        }
+
+        /* Estilo da imagem de perfil
+           - Formato circular
+           - Borda destacada */
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #ff4500;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* Grade de habilidades
+           - Layout em três colunas
+           - Espaçamento entre habilidades */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        /* Estilo dos badges de habilidade
+           - Fundo semi-transparente
+           - Efeito de hover com animação de escala */
+        .skill-badge {
+            background-color: rgba(138, 43, 226, 0.2);
+            padding: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-badge:hover {
+            transform: scale(1.1);
+        }
+
+        /* Links de perfil profissional
+           - Centralizado
+           - Cores e efeitos de transição */
+        .profile-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .profile-links a {
+            color: #ff4500;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .profile-links a:hover {
+            color: #8a2be2;
+        }
+    </style>
+</head>
+<body>
+    <div class="portfolio-container">
+        <!-- Imagem de perfil (placeholder) -->
+        <img src="/api/placeholder/150/150" alt="Perfil" class="profile-image">
+        
+        <!-- Título e subtítulo -->
+        <h1>Daniel Souza</h1>
+        <p>Desenvolvedor Full Stack | Estudante de Programação</p>
+        
+        <!-- Grade de habilidades técnicas -->
+        <div class="skills-grid">
+            <div class="skill-badge">🐍 Python</div>
+            <div class="skill-badge">💻 HTML</div>
+            <div class="skill-badge">🎨 CSS</div>
+            <div class="skill-badge">⚡ JavaScript</div>
+            <div class="skill-badge">🗄️ MySQL</div>
+            <div class="skill-badge">📦 MongoDB</div>
+        </div>
+
+        <!-- Links para perfis profissionais -->
+        <div class="profile-links">
+            <a href="https://github.com/DanSouKK" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/daniel-souza-609ba3b9" target="_blank">LinkedIn</a>
+        </div>
+
+        <!-- Barra de carregamento animada -->
+        <div class="loading-bar"></div>
+    </div>
+</body>
+</html>
