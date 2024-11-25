@@ -1,0 +1,62 @@
+/* Importação de fonte personalizada para texto */
+@font-face {
+    font-family: "Hack";
+    src: url("fonts/Hack-Bold.ttf") format("truetype");
+}
+
+/* Importação de fonte para estilo de display LED */
+@font-face {
+    font-family: "FX-LED";
+    src: url("fonts/FX-LED.ttf") format("truetype");
+}
+
+/* Estilização do container principal do relógio */
+.digital-clock {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    border-radius: 2rem;
+    user-select: none; /* Impede seleção de texto */
+    padding: 0 2rem;
+    border: 0.5rem solid #2d2d2d;
+}
+
+/* Estilização da seção de dias da semana */
+.week {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    color: #2d2d2d;
+    font-weight: bold;
+    font-family: "Hack", sans-serif;
+}
+
+/* Destaque para o dia atual */
+.week .active {
+    color: white;
+}
+
+/* Estilização do display de tempo */
+.time {
+    font-family: "FX-LED", monospace;
+}
+
+/* Formatação dos elementos de hora, minutos e separador */
+.hour,
+.min,
+.dot {
+    display: inline-block;
+    font-size: 13rem;
+}
+
+/* Garantindo exibição correta dos minutos */
+.min {
+    display: inline-block;
+}
+
+/* Classe para elementos invisíveis */
+.invisible {
+    visibility: hidden;    
+}

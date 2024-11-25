@@ -70,7 +70,7 @@ def calcular_materiais_por_raridade(tipo, raridade_desejada):
         total_aco_negro += custos[raridade]["aco_negro"] * (total_materiais[materias_primas[0]] // multiplicador_raridade[raridade])
 
     # Exibe o resultado com as matérias-primas conforme o tipo de item
-    print(f"Para criar um(a) {tipo} {raridade_desejada}, você precisará das seguintes matérias-primas:")
+    print(f"Para criar um(a) {tipo} {raridade_desejada}, você precisará das seguintes matérias-primas(incomum):")
     for material, quantidade in total_materiais.items():
         print(f"- {quantidade} unidades de {material}")
     print(f"- {total_po_brilhante} de pó brilhante")
