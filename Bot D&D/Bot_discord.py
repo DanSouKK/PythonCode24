@@ -1,3 +1,5 @@
+# link de um artigo falando sobre IA DM de RPG
+# https://www.orcnroll.com/2023/08/16/como-utilizar-ia-para-jogar-rpg/
 # Importações necessárias
 import discord
 from discord.ext import commands
