@@ -15,47 +15,46 @@ class DnDCharacter:
 
         # Attributes
         self.attributes = {
-            "Strength": 0,
-            "Dexterity": 0,
-            "Constitution": 0,
-            "Intelligence": 0,
-            "Wisdom": 0,
-            "Charisma": 0
+            "Força": 0,
+            "Destreza": 0,
+            "Constituição": 0,
+            "Inteligencia": 0,
+            "Sabedoria": 0,
+            "Carisma": 0
         }
 
         # Racial bonuses
         self.racial_bonuses = {
             "Human": {"bonus_feat": True, "extra_skill_points": 1},
-            "Elf": {"Dexterity": 2, "Constitution": -2},
-            "Dwarf": {"Constitution": 2, "Charisma": -2},
-            "Halfling": {"Dexterity": 2, "Strength": -2},
-            "Meio-Orc":{"Strenght":2, "Inteligence": -2, "Charisma": -2}, 
+            "Elf": {"Destreza": 2, "Constituicao": -2},
+            "Dwarf": {"Constituicao": 2, "Carisma": -2},
+            "Halfling": {"Destreza": 2, "Forca": -2},
+            "Meio-Orc":{"Forca":2, "Inteligencia": -2, "Carisma": -2}, 
             "Meio-Elfo":{None},
-            "Gnome":{"Constitution": 2, "Strenght": -2}
+            "Gnome":{"Constituicao": 2, "Forca": -2}
 
             # Add more races as needed
         }
 
         # Class information
         self.class_hit_dice = {
-            "Barbarian": 12,
-            "Bard": 6,
-            "Cleric": 8,
-            "Druid": 8,
-            "Fighter": 10,
-            "Monk": 8,
-            "Paladin": 10,
+            "Barbaro": 12,
+            "Bardo": 6,
+            "Clerigo": 8,
+            "Druida": 8,
+            "Guerreiro": 10,
+            "Monge": 8,
+            "Paladino": 10,
             "Ranger": 10,
-            "Rogue": 6,
-            "Sorcerer": 4,
-            "Wizard": 4
+            "Ladino": 6,
+            "Feiticeiro": 4,
+            "Mago": 4
         }
 
     def collect_basic_info(self):
-        """Collect basic character information from the user."""
+        #Collect basic character information from the user.
         print("--- Criação de Personagem D&D 3.5 ---")
-        self.name = input("Nome do personagem: ")
-        self.size = input("Tamanho do personagem: ")
+        self.name = input("Nome do personagem: ")        
         self.age = int(input("Idade do personagem: "))
         self.weight = float(input("Peso do personagem (kg): "))
         self.height = float(input("Altura do personagem (cm): "))
@@ -83,7 +82,7 @@ class DnDCharacter:
     def generate_attributes(self, method='random'):
         """Generate character attributes based on user's preferred method."""
         def roll_4d6_drop_lowest():
-            """Standard D&D 3.5 attribute generation method."""
+            # Standard D&D 3.5 attribute generation method.
             rolls = [random.randint(1, 6) for _ in range(4)]
             rolls.remove(min(rolls))
             return sum(rolls)
@@ -117,20 +116,20 @@ class DnDCharacter:
                 self.attributes[attr] = int(input(f"Valor para {attr}: "))
 
     def apply_racial_modifiers(self):
-        """Apply racial attribute modifiers."""
+        # Apply racial attribute modifiers
         race_mods = self.racial_bonuses.get(self.race, {})
         for attr, bonus in race_mods.items():
             if attr in self.attributes:
                 self.attributes[attr] += bonus
 
     def calculate_modifiers(self):
-        """Calculate attribute modifiers."""
+        # Calculate attribute modifiers
         self.modifiers = {}
         for attr, value in self.attributes.items():
             self.modifiers[attr] = (value - 10) // 2
 
     def generate_character(self):
-        """Main method to generate the entire character."""
+        #Main method to generate the entire character
         self.collect_basic_info()
         
         # Attribute generation method
