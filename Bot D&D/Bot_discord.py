@@ -1,6 +1,7 @@
 # link de um artigo falando sobre IA DM de RPG
 # https://www.orcnroll.com/2023/08/16/como-utilizar-ia-para-jogar-rpg/
 # https://www.freecodecamp.org/portuguese/news/tutorial-de-criacao-de-bot-para-o-discord-em-python/
+# https://github.com/orgs/easy-rpg/repositories   api de ficha de personagem D&D3.5
 # Importações necessárias
 import discord
 from discord.ext import commands
